@@ -28,5 +28,10 @@ def average_game(statistics):
 
 
 
-
+#Se obtiene el promedio del goleador
+def average_winner(statistics):
+    info = best_player(statistics)
+    average_soccer = info["Goles"] / 25
+    return (f'El promedio de goles del goleador por partido es de {average_soccer} goles')
+    
 
