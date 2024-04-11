@@ -21,5 +21,12 @@ def influential_player(statistics):
 
 
 
+#Se calcula el promedio de goles por partido
+def average_game(statistics):
+    total_goals = sum(map(lambda player: player["Goles"], statistics)) /25
+    return (f'El promedio de goles por partido en general fue de {total_goals}')
+
+
+
 
 
