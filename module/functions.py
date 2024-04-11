@@ -10,4 +10,16 @@ def info_best_player(statistics):
 
 
 
+# Calculamos los puntos de cada jugador
+def points(player):
+    return player["Goles"]*1.5 + player["Goles evitados"]*1.5 + player["Asistencias"]
+
+#Se obtiene el diccionario cuyo jugador tiene mayor puntaje
+def influential_player(statistics):
+        player = max(statistics, key=points)
+        return (f'El jugador mas influyente fue {player["Nombre"]} con un total de {points(player)} puntos')
+
+
+
+
 
